@@ -44,4 +44,6 @@ Vercel 项目设置应使用 Next.js、Node 22.x、`yarn install --frozen-lockfi
 
 ## GitHub 持久关联
 
-新版代码保存在 https://github.com/kazoottt/NotionNext 的 setup-blog 分支，来自上游 4.11.0。旧仓库 https://github.com/kazoottt/NotionNext-kazoottt 保留原 main、历史部署与未合并 PR。新 Vercel 项目 notionnext-kazoottt 的生产分支计划明确设为 setup-blog；关联与自动部署证据见交付报告。不提交 .env.local、.vercel、日志或缓存。
+新版代码保存在 https://github.com/kazoottt/NotionNext 的 setup-blog 分支，来自上游 4.11.0。旧仓库 https://github.com/kazoottt/NotionNext-kazoottt 保留原 main、历史部署与未合并 PR。新 Vercel 项目 notionnext-kazoottt 的生产分支设为 setup-blog；关联与自动部署证据见交付报告。不提交 .env.local、.vercel、日志或缓存。
+
+Vercel 已持久保存示例中的八项公开配置，覆盖 production/preview/development。推送 setup-blog 自动创建生产部署；main 未合并前不作为生产来源。后续合并 PR 后如需转为 main，应同步修改 Vercel 的生产分支并重新核验，避免切换到未配置版本。
