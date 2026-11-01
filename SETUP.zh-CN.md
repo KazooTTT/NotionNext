@@ -47,3 +47,10 @@ Vercel 项目设置应使用 Next.js、Node 22.x、`yarn install --frozen-lockfi
 新版代码保存在 https://github.com/kazoottt/NotionNext 的 setup-blog 分支，来自上游 4.11.0。旧仓库 https://github.com/kazoottt/NotionNext-kazoottt 保留原 main、历史部署与未合并 PR。新 Vercel 项目 notionnext-kazoottt 的生产分支设为 setup-blog；关联与自动部署证据见交付报告。不提交 .env.local、.vercel、日志或缓存。
 
 Vercel 已持久保存示例中的八项公开配置，覆盖 production/preview/development。推送 setup-blog 自动创建生产部署；main 未合并前不作为生产来源。后续合并 PR 后如需转为 main，应同步修改 Vercel 的生产分支并重新核验，避免切换到未配置版本。
+
+## 已验证的在线入口
+
+- 首页：https://notion.kazoottt.top/
+- 真实文章：https://notion.kazoottt.top/article/bw2024
+
+文章沿用 Notion CONFIG 的 article/ 前缀，因此 /bw2024 返回 404 属于路由配置结果。Git 自动部署已显式启用（createDeployments=enabled），部署前可检查 Vercel 项目生产分支仍为 setup-blog。个人简介和评论/统计仍可后续按需配置。
