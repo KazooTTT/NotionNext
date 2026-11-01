@@ -2,5 +2,8 @@
   "cleanUrls": false,
   "trailingSlash": false,
   "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_MESSAGE\" in *\"[skip-version]\"*) exit 0;; *) exit 1;; esac",
-  "headers": []
+  "headers": [],
+  "framework": "nextjs",
+  "installCommand": "yarn install --frozen-lockfile",
+  "buildCommand": "yarn build"
 }
