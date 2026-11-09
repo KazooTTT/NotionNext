@@ -1,0 +1,10 @@
+.git
+.next
+node_modules
+docs
+output
+.tmp
+.perf
+.env.local
+.env.setup.example
+SETUP.zh-CN.md
